@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>BTNavigationDropdownMenu.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>GRMustache.swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,7 +47,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>19DB0052AD606F5B87563B23B514C170</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1EEDA0FE033F983A39499C0E1E950457</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>27FA7FDD686A7C23B376153CE8D58BC9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,32 +72,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9081F3C9C08F8544EF9685B1DA818BC7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A1E3AA53B95E70A87D171F0573550F36</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>A31FE7A0FD539E07C437381D539A044F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A52524E727A97710A55D0EDA55BB7CFE</key>
+		<key>C7639E6F6CD225D8CF279EF2F483316E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>CC416A3DA77F3B28E520D36CA7610AAD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DCD57C8F816AD079D17CCAC375FFE060</key>
 		<dict>
 			<key>primary</key>
 			<true/>

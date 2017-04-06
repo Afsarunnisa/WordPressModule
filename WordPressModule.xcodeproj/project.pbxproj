@@ -10,6 +10,10 @@
 		C26630815DF59C9722B7E9CE /* Pods_WordPressModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3954EAF4492F939A5C744A /* Pods_WordPressModule.framework */; };
 		F94FC2641E9612BA0052C977 /* WordPressModuleUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94FC2631E9612BA0052C977 /* WordPressModuleUtilities.swift */; };
 		F94FC2661E9613010052C977 /* mod.WordPressModule.plist in Resources */ = {isa = PBXBuildFile; fileRef = F94FC2651E9613010052C977 /* mod.WordPressModule.plist */; };
+		F976EF9A1E9673F0008034D6 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F976EF951E9673F0008034D6 /* LICENSE */; };
+		F976EF9B1E9673F0008034D6 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = F976EF961E9673F0008034D6 /* README.md */; };
+		F976EF9C1E9673F0008034D6 /* BTNavigationDropdownMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F976EF981E9673F0008034D6 /* BTNavigationDropdownMenu.bundle */; };
+		F976EF9D1E9673F0008034D6 /* BTNavigationDropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F976EF991E9673F0008034D6 /* BTNavigationDropdownMenu.swift */; };
 		F9F697B11E93D099000E7C75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F697B01E93D099000E7C75 /* AppDelegate.swift */; };
 		F9F697B31E93D099000E7C75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F697B21E93D099000E7C75 /* ViewController.swift */; };
 		F9F697B61E93D099000E7C75 /* WordPressModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9F697B41E93D099000E7C75 /* WordPressModule.storyboard */; };
@@ -36,6 +40,10 @@
 		DF3954EAF4492F939A5C744A /* Pods_WordPressModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordPressModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94FC2631E9612BA0052C977 /* WordPressModuleUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordPressModuleUtilities.swift; sourceTree = "<group>"; };
 		F94FC2651E9613010052C977 /* mod.WordPressModule.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mod.WordPressModule.plist; sourceTree = "<group>"; };
+		F976EF951E9673F0008034D6 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F976EF961E9673F0008034D6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F976EF981E9673F0008034D6 /* BTNavigationDropdownMenu.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BTNavigationDropdownMenu.bundle; sourceTree = "<group>"; };
+		F976EF991E9673F0008034D6 /* BTNavigationDropdownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTNavigationDropdownMenu.swift; sourceTree = "<group>"; };
 		F9F697AD1E93D099000E7C75 /* WordPressModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordPressModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9F697B01E93D099000E7C75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9F697B21E93D099000E7C75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +95,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F976EF941E9673F0008034D6 /* BTNavigationDropdownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F976EF951E9673F0008034D6 /* LICENSE */,
+				F976EF961E9673F0008034D6 /* README.md */,
+				F976EF971E9673F0008034D6 /* Source */,
+			);
+			path = BTNavigationDropdownMenu;
+			sourceTree = "<group>";
+		};
+		F976EF971E9673F0008034D6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F976EF981E9673F0008034D6 /* BTNavigationDropdownMenu.bundle */,
+				F976EF991E9673F0008034D6 /* BTNavigationDropdownMenu.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		F9F697A41E93D099000E7C75 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +135,7 @@
 		F9F697AF1E93D099000E7C75 /* WordPressModule */ = {
 			isa = PBXGroup;
 			children = (
+				F976EF941E9673F0008034D6 /* BTNavigationDropdownMenu */,
 				F9F697B01E93D099000E7C75 /* AppDelegate.swift */,
 				F9F697B21E93D099000E7C75 /* ViewController.swift */,
 				F9F697D41E93D59D000E7C75 /* PostDetailsViewController.swift */,
@@ -231,9 +259,11 @@
 				F9F697BB1E93D099000E7C75 /* LaunchScreen.storyboard in Resources */,
 				F9F697D01E93D1FE000E7C75 /* Styles.css in Resources */,
 				F94FC2661E9613010052C977 /* mod.WordPressModule.plist in Resources */,
+				F976EF9A1E9673F0008034D6 /* LICENSE in Resources */,
 				F9F697B81E93D099000E7C75 /* Assets.xcassets in Resources */,
 				F9F697D71E93D5BB000E7C75 /* Info.plist in Resources */,
 				F9F697B61E93D099000E7C75 /* WordPressModule.storyboard in Resources */,
+				F976EF9C1E9673F0008034D6 /* BTNavigationDropdownMenu.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9F697B31E93D099000E7C75 /* ViewController.swift in Sources */,
+				F976EF9D1E9673F0008034D6 /* BTNavigationDropdownMenu.swift in Sources */,
 				F9F697DF1E93D602000E7C75 /* Bundle.swift in Sources */,
 				F9F697D11E93D1FE000E7C75 /* WordpressApi.swift in Sources */,
 				F9F697B11E93D099000E7C75 /* AppDelegate.swift in Sources */,
@@ -304,6 +335,7 @@
 				F9F697CC1E93D1FE000E7C75 /* Category.swift in Sources */,
 				F9F697CE1E93D1FE000E7C75 /* Media.swift in Sources */,
 				F9F697D21E93D1FE000E7C75 /* WordpressIdsRegistry.swift in Sources */,
+				F976EF9B1E9673F0008034D6 /* README.md in Sources */,
 				F9F697D51E93D59D000E7C75 /* PostDetailsViewController.swift in Sources */,
 				F9F697DC1E93D5D5000E7C75 /* PostCell.swift in Sources */,
 			);
