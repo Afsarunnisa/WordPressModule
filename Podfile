@@ -9,8 +9,8 @@ target 'WordPressModule' do
 
 
     pod 'RealmSwift'
-    pod 'idn_sdk_ios', :git => 'https://gitlab.com/wavelabs/idn-sdk-ios.git'
     pod 'GRMustache.swift'
+    pod 'idn_sdk_ios', '~> 0.7.6'
 
 
 

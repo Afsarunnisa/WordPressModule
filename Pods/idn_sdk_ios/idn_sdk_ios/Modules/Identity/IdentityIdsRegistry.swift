@@ -14,5 +14,4 @@ open class IdentityIdsRegistry {
     public init(){
         IDS.register("identity", clazz: IdentityApi.self)
     }
-    
 }

@@ -200,7 +200,6 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         
-        
         let postViewController = self.storyboard?.instantiateViewController(withIdentifier: "PostDetailVC") as! PostDetailViewController
         
         let post : Post = posts[indexPath.row] as! Post
@@ -243,7 +242,6 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
                 
                 self.postsTableView.reloadData()
             })
-            
         }
     }    
     
@@ -252,8 +250,6 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
     
     
     func filterdContentForSearchText(searchText : String, scopr : String = "All"){

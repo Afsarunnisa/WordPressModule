@@ -178,7 +178,6 @@ open class IdentityRemoteApi  {
     
     func changePassword(_ changePswDetails : Dictionary<String, Any>, completionHandler: @escaping (AnyObject?, Int, NSError?) -> ()){
         
-        
         let hostUrl : String = apiContext.getHost("app")
         
         let url : String = "\(hostUrl)\(changePasswordUrl)"
@@ -207,7 +206,7 @@ open class IdentityRemoteApi  {
         
         let hostUrl : String = apiContext.getHost("app")
         
-        let url : String = "\(hostUrl)(getModulesUrl)\(tenantID)/modules/subscribed"
+        let url : String = "\(hostUrl)\(getModulesUrl)\(tenantID)/modules/subscribed"
         
         networkAPI.get(url, paramsDict: Dictionary(), headers: clientTokenheaders, completionHandler: completionHandler)
         

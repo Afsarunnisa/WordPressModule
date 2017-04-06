@@ -2,7 +2,7 @@ PODS:
   - Alamofire (4.4.0)
   - BTNavigationDropdownMenu (0.4.1)
   - GRMustache.swift (2.0.0)
-  - idn_sdk_ios (0.7.4):
+  - idn_sdk_ios (0.7.6):
     - Alamofire (~> 4.4)
     - MBProgressHUD
     - SwiftyJSON
@@ -17,34 +17,29 @@ PODS:
 DEPENDENCIES:
   - BTNavigationDropdownMenu (from `https://github.com/PhamBaTho/BTNavigationDropdownMenu.git`, branch `swift-3.0`)
   - GRMustache.swift
-  - idn_sdk_ios (from `https://gitlab.com/wavelabs/idn-sdk-ios.git`)
+  - idn_sdk_ios (~> 0.7.6)
   - RealmSwift
 
 EXTERNAL SOURCES:
   BTNavigationDropdownMenu:
     :branch: swift-3.0
     :git: https://github.com/PhamBaTho/BTNavigationDropdownMenu.git
-  idn_sdk_ios:
-    :git: https://gitlab.com/wavelabs/idn-sdk-ios.git
 
 CHECKOUT OPTIONS:
   BTNavigationDropdownMenu:
     :commit: 2c08c8579cf7a53ecb3dbf578e6e1034080a9859
     :git: https://github.com/PhamBaTho/BTNavigationDropdownMenu.git
-  idn_sdk_ios:
-    :commit: 72ab890860ccfd08d6cf87c01e6ea173191df7de
-    :git: https://gitlab.com/wavelabs/idn-sdk-ios.git
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   BTNavigationDropdownMenu: 093f3cbfad1572f2c222bdf8d17584d1e13380d4
   GRMustache.swift: 8a547c12bea16052071b2b540af83d770075f0eb
-  idn_sdk_ios: 99bb4748149072645b01feea0f17da24c3a6d399
+  idn_sdk_ios: b3f237b99f480c60c48c51bc8ef13c706cb7c9b4
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   Realm: 5a280a1f5a9a3c267bebf4f41ee47911137703d7
   RealmSwift: 0c02b9f2d4be4301c497ed10e53a0580584eb1dd
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: b3cccc60de85f330568480d4fef46a6e2ddfe0eb
+PODFILE CHECKSUM: 2c29eda0570090cc7a5d1563c57f0b78b5fabc97
 
 COCOAPODS: 1.1.1
