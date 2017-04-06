@@ -1,0 +1,6 @@
+framework module idn_sdk_ios {
+  umbrella header "idn_sdk_ios-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C26630815DF59C9722B7E9CE /* Pods_WordPressModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3954EAF4492F939A5C744A /* Pods_WordPressModule.framework */; };
+		F94FC2641E9612BA0052C977 /* WordPressModuleUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94FC2631E9612BA0052C977 /* WordPressModuleUtilities.swift */; };
+		F94FC2661E9613010052C977 /* mod.WordPressModule.plist in Resources */ = {isa = PBXBuildFile; fileRef = F94FC2651E9613010052C977 /* mod.WordPressModule.plist */; };
+		F9F697B11E93D099000E7C75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F697B01E93D099000E7C75 /* AppDelegate.swift */; };
+		F9F697B31E93D099000E7C75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F697B21E93D099000E7C75 /* ViewController.swift */; };
+		F9F697B61E93D099000E7C75 /* WordPressModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9F697B41E93D099000E7C75 /* WordPressModule.storyboard */; };
+		F9F697B81E93D099000E7C75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9F697B71E93D099000E7C75 /* Assets.xcassets */; };
+		F9F697BB1E93D099000E7C75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9F697B91E93D099000E7C75 /* LaunchScreen.storyboard */; };
+		F9F697CC1E93D1FE000E7C75 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F697C41E93D1FE000E7C75 /* Category.swift */; };
+		F9F697CD1E93D1FE000E7C75 /* CategoryId.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F697C51E93D1FE000E7C75 /* CategoryId.swift */; };
+		F9F697CE1E93D1FE000E7C75 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F697C61E93D1FE000E7C75 /* Media.swift */; };
+		F9F697CF1E93D1FE000E7C75 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F697C71E93D1FE000E7C75 /* Post.swift */; };
+		F9F697D01E93D1FE000E7C75 /* Styles.css in Resources */ = {isa = PBXBuildFile; fileRef = F9F697C81E93D1FE000E7C75 /* Styles.css */; };
+		F9F697D11E93D1FE000E7C75 /* WordpressApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F697C91E93D1FE000E7C75 /* WordpressApi.swift */; };
+		F9F697D21E93D1FE000E7C75 /* WordpressIdsRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F697CA1E93D1FE000E7C75 /* WordpressIdsRegistry.swift */; };
+		F9F697D31E93D1FE000E7C75 /* WordpressRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F697CB1E93D1FE000E7C75 /* WordpressRemoteApi.swift */; };
+		F9F697D51E93D59D000E7C75 /* PostDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F697D41E93D59D000E7C75 /* PostDetailsViewController.swift */; };
+		F9F697D71E93D5BB000E7C75 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9F697D61E93D5BB000E7C75 /* Info.plist */; };
+		F9F697DB1E93D5D5000E7C75 /* ArticlesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F697D91E93D5D5000E7C75 /* ArticlesCell.swift */; };
+		F9F697DC1E93D5D5000E7C75 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F697DA1E93D5D5000E7C75 /* PostCell.swift */; };
+		F9F697DF1E93D602000E7C75 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F697DE1E93D602000E7C75 /* Bundle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5ADFF9536126F28E87950785 /* Pods-WordPressModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordPressModule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordPressModule/Pods-WordPressModule.debug.xcconfig"; sourceTree = "<group>"; };
+		88041285285A0056DEFB3CFF /* Pods-WordPressModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordPressModule.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordPressModule/Pods-WordPressModule.release.xcconfig"; sourceTree = "<group>"; };
+		DF3954EAF4492F939A5C744A /* Pods_WordPressModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordPressModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F94FC2631E9612BA0052C977 /* WordPressModuleUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordPressModuleUtilities.swift; sourceTree = "<group>"; };
+		F94FC2651E9613010052C977 /* mod.WordPressModule.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mod.WordPressModule.plist; sourceTree = "<group>"; };
+		F9F697AD1E93D099000E7C75 /* WordPressModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordPressModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9F697B01E93D099000E7C75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F9F697B21E93D099000E7C75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9F697B51E93D099000E7C75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/WordPressModule.storyboard; sourceTree = "<group>"; };
+		F9F697B71E93D099000E7C75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9F697BA1E93D099000E7C75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9F697BC1E93D099000E7C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9F697C41E93D1FE000E7C75 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		F9F697C51E93D1FE000E7C75 /* CategoryId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryId.swift; sourceTree = "<group>"; };
+		F9F697C61E93D1FE000E7C75 /* Media.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		F9F697C71E93D1FE000E7C75 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		F9F697C81E93D1FE000E7C75 /* Styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = Styles.css; sourceTree = "<group>"; };
+		F9F697C91E93D1FE000E7C75 /* WordpressApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordpressApi.swift; sourceTree = "<group>"; };
+		F9F697CA1E93D1FE000E7C75 /* WordpressIdsRegistry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordpressIdsRegistry.swift; sourceTree = "<group>"; };
+		F9F697CB1E93D1FE000E7C75 /* WordpressRemoteApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordpressRemoteApi.swift; sourceTree = "<group>"; };
+		F9F697D41E93D59D000E7C75 /* PostDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailsViewController.swift; sourceTree = "<group>"; };
+		F9F697D61E93D5BB000E7C75 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9F697D91E93D5D5000E7C75 /* ArticlesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesCell.swift; sourceTree = "<group>"; };
+		F9F697DA1E93D5D5000E7C75 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		F9F697DE1E93D602000E7C75 /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9F697AA1E93D099000E7C75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C26630815DF59C9722B7E9CE /* Pods_WordPressModule.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B152EB6E2B05723EF42BB697 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5ADFF9536126F28E87950785 /* Pods-WordPressModule.debug.xcconfig */,
+				88041285285A0056DEFB3CFF /* Pods-WordPressModule.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DCBEC843B0E3C48E1582E09B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF3954EAF4492F939A5C744A /* Pods_WordPressModule.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9F697A41E93D099000E7C75 = {
+			isa = PBXGroup;
+			children = (
+				F9F697AF1E93D099000E7C75 /* WordPressModule */,
+				F9F697AE1E93D099000E7C75 /* Products */,
+				B152EB6E2B05723EF42BB697 /* Pods */,
+				DCBEC843B0E3C48E1582E09B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F9F697AE1E93D099000E7C75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9F697AD1E93D099000E7C75 /* WordPressModule.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9F697AF1E93D099000E7C75 /* WordPressModule */ = {
+			isa = PBXGroup;
+			children = (
+				F9F697B01E93D099000E7C75 /* AppDelegate.swift */,
+				F9F697B21E93D099000E7C75 /* ViewController.swift */,
+				F9F697D41E93D59D000E7C75 /* PostDetailsViewController.swift */,
+				F94FC2631E9612BA0052C977 /* WordPressModuleUtilities.swift */,
+				F9F697D61E93D5BB000E7C75 /* Info.plist */,
+				F94FC2651E9613010052C977 /* mod.WordPressModule.plist */,
+				F9F697DD1E93D602000E7C75 /* Extensions */,
+				F9F697D81E93D5D5000E7C75 /* CustomCells */,
+				F9F697C21E93D1FE000E7C75 /* API */,
+				F9F697B41E93D099000E7C75 /* WordPressModule.storyboard */,
+				F9F697B71E93D099000E7C75 /* Assets.xcassets */,
+				F9F697B91E93D099000E7C75 /* LaunchScreen.storyboard */,
+				F9F697BC1E93D099000E7C75 /* Info.plist */,
+			);
+			path = WordPressModule;
+			sourceTree = "<group>";
+		};
+		F9F697C21E93D1FE000E7C75 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F9F697C31E93D1FE000E7C75 /* Models */,
+				F9F697C81E93D1FE000E7C75 /* Styles.css */,
+				F9F697C91E93D1FE000E7C75 /* WordpressApi.swift */,
+				F9F697CA1E93D1FE000E7C75 /* WordpressIdsRegistry.swift */,
+				F9F697CB1E93D1FE000E7C75 /* WordpressRemoteApi.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F9F697C31E93D1FE000E7C75 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F9F697C41E93D1FE000E7C75 /* Category.swift */,
+				F9F697C51E93D1FE000E7C75 /* CategoryId.swift */,
+				F9F697C61E93D1FE000E7C75 /* Media.swift */,
+				F9F697C71E93D1FE000E7C75 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F9F697D81E93D5D5000E7C75 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				F9F697D91E93D5D5000E7C75 /* ArticlesCell.swift */,
+				F9F697DA1E93D5D5000E7C75 /* PostCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		F9F697DD1E93D602000E7C75 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F9F697DE1E93D602000E7C75 /* Bundle.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9F697AC1E93D099000E7C75 /* WordPressModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9F697BF1E93D099000E7C75 /* Build configuration list for PBXNativeTarget "WordPressModule" */;
+			buildPhases = (
+				E1B23656ECB8B50902B2FC17 /* [CP] Check Pods Manifest.lock */,
+				F9F697A91E93D099000E7C75 /* Sources */,
+				F9F697AA1E93D099000E7C75 /* Frameworks */,
+				F9F697AB1E93D099000E7C75 /* Resources */,
+				E6679A71CB60D3D9063E1A28 /* [CP] Embed Pods Frameworks */,
+				ADCF0CEA4D2442CA257602CF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WordPressModule;
+			productName = WordPressModule;
+			productReference = F9F697AD1E93D099000E7C75 /* WordPressModule.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9F697A51E93D099000E7C75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Afsarunnisa;
+				TargetAttributes = {
+					F9F697AC1E93D099000E7C75 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 45M55EWX9G;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F9F697A81E93D099000E7C75 /* Build configuration list for PBXProject "WordPressModule" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9F697A41E93D099000E7C75;
+			productRefGroup = F9F697AE1E93D099000E7C75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9F697AC1E93D099000E7C75 /* WordPressModule */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9F697AB1E93D099000E7C75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9F697BB1E93D099000E7C75 /* LaunchScreen.storyboard in Resources */,
+				F9F697D01E93D1FE000E7C75 /* Styles.css in Resources */,
+				F94FC2661E9613010052C977 /* mod.WordPressModule.plist in Resources */,
+				F9F697B81E93D099000E7C75 /* Assets.xcassets in Resources */,
+				F9F697D71E93D5BB000E7C75 /* Info.plist in Resources */,
+				F9F697B61E93D099000E7C75 /* WordPressModule.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ADCF0CEA4D2442CA257602CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordPressModule/Pods-WordPressModule-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1B23656ECB8B50902B2FC17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E6679A71CB60D3D9063E1A28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordPressModule/Pods-WordPressModule-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9F697A91E93D099000E7C75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9F697B31E93D099000E7C75 /* ViewController.swift in Sources */,
+				F9F697DF1E93D602000E7C75 /* Bundle.swift in Sources */,
+				F9F697D11E93D1FE000E7C75 /* WordpressApi.swift in Sources */,
+				F9F697B11E93D099000E7C75 /* AppDelegate.swift in Sources */,
+				F9F697D31E93D1FE000E7C75 /* WordpressRemoteApi.swift in Sources */,
+				F9F697DB1E93D5D5000E7C75 /* ArticlesCell.swift in Sources */,
+				F94FC2641E9612BA0052C977 /* WordPressModuleUtilities.swift in Sources */,
+				F9F697CD1E93D1FE000E7C75 /* CategoryId.swift in Sources */,
+				F9F697CF1E93D1FE000E7C75 /* Post.swift in Sources */,
+				F9F697CC1E93D1FE000E7C75 /* Category.swift in Sources */,
+				F9F697CE1E93D1FE000E7C75 /* Media.swift in Sources */,
+				F9F697D21E93D1FE000E7C75 /* WordpressIdsRegistry.swift in Sources */,
+				F9F697D51E93D59D000E7C75 /* PostDetailsViewController.swift in Sources */,
+				F9F697DC1E93D5D5000E7C75 /* PostCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F9F697B41E93D099000E7C75 /* WordPressModule.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9F697B51E93D099000E7C75 /* Base */,
+			);
+			name = WordPressModule.storyboard;
+			sourceTree = "<group>";
+		};
+		F9F697B91E93D099000E7C75 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9F697BA1E93D099000E7C75 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9F697BD1E93D099000E7C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9F697BE1E93D099000E7C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9F697C01E93D099000E7C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ADFF9536126F28E87950785 /* Pods-WordPressModule.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 45M55EWX9G;
+				INFOPLIST_FILE = WordPressModule/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Wavelabs.WordPressModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F9F697C11E93D099000E7C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88041285285A0056DEFB3CFF /* Pods-WordPressModule.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 45M55EWX9G;
+				INFOPLIST_FILE = WordPressModule/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Wavelabs.WordPressModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9F697A81E93D099000E7C75 /* Build configuration list for PBXProject "WordPressModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9F697BD1E93D099000E7C75 /* Debug */,
+				F9F697BE1E93D099000E7C75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9F697BF1E93D099000E7C75 /* Build configuration list for PBXNativeTarget "WordPressModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9F697C01E93D099000E7C75 /* Debug */,
+				F9F697C11E93D099000E7C75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9F697A51E93D099000E7C75 /* Project object */;
+}
