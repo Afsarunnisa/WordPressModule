@@ -9,14 +9,46 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WordPressModule/ViewController.swift"
-            timestampString = "513237276.827795"
+            filePath = "Pods/idn_sdk_ios/idn_sdk_ios/API/NetworkApi.swift"
+            timestampString = "513240749.221584"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "getWithEncode(_:paramsDict:headers:completionHandler:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "idn_sdk_ios.NetworkApi.getWithEncode (Swift.String, paramsDict : Swift.Dictionary&lt;Swift.String, Any&gt;, headers : Swift.Dictionary&lt;Swift.String, Swift.String&gt;, completionHandler : (Swift.Optional&lt;Swift.AnyObject&gt;, Swift.Int, Swift.Optional&lt;__ObjC.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "idn_sdk_ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/afsara/Desktop/NBOS/WaveLabs_APril/Modules_Git/WordPressModule/Pods/idn_sdk_ios/idn_sdk_ios/API/NetworkApi.swift"
+                  timestampString = "513240761.295244"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "idn_sdk_ios.NetworkApi.(getWithEncode (Swift.String, paramsDict : Swift.Dictionary&lt;Swift.String, Any&gt;, headers : Swift.Dictionary&lt;Swift.String, Swift.String&gt;, completionHandler : (Swift.Optional&lt;Swift.AnyObject&gt;, Swift.Int, Swift.Optional&lt;__ObjC.NSError&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "idn_sdk_ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/afsara/Desktop/NBOS/WaveLabs_APril/Modules_Git/WordPressModule/Pods/idn_sdk_ios/idn_sdk_ios/API/NetworkApi.swift"
+                  timestampString = "513240761.297225"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -25,77 +57,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pods/idn_sdk_ios/idn_sdk_ios/Modules/IDS/IDS.swift"
-            timestampString = "513237585.795489"
+            filePath = "Pods/idn_sdk_ios/idn_sdk_ios/API/IdsIosApiContext.swift"
+            timestampString = "513240795.948348"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "getModuleApi(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Pods/idn_sdk_ios/idn_sdk_ios/Modules/IDS/IDS.swift"
-            timestampString = "513237588.032671"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "getModeuleApi(_:contextName:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Pods/idn_sdk_ios/idn_sdk_ios/Modules/IDS/IDS.swift"
-            timestampString = "513237599.423724"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "getModeuleApi(_:contextName:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Pods/idn_sdk_ios/idn_sdk_ios/Modules/IDS/IDS.swift"
-            timestampString = "513237601.413264"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "getModeuleApi(_:contextName:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Pods/idn_sdk_ios/idn_sdk_ios/Modules/IDS/IDS.swift"
-            timestampString = "513238111.317568"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "register(_:clazz:)"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "getHost(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
