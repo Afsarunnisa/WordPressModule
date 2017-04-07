@@ -8,7 +8,7 @@ s.summary = "WordPressModule "
 s.requires_arc = true
 
 # 2
-s.version = "0.1.7"
+s.version = "0.1.8"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
@@ -49,5 +49,5 @@ s.dependency 'idn_sdk_ios', '~> 0.7.6'
 s.source_files = "WordPressModule/**/*.{swift}"
 
 # 9
-s.resources = "WordPressModule/**/*.{png,jpeg,jpg,storyboard,xib,plist}"
+s.resources = "WordPressModule/**/*.{png,jpeg,jpg,storyboard,xib,plist,bundle}"
 end
