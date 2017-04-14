@@ -19,9 +19,7 @@ open class TokenRemoteApi  {
     init(httpClient: AnyObject) {
         
         apiContext = AbstractApiContext.get("app") as! IdsIosApiContext
-        
         networkAPI = NetworkApi()
-        
     }
     
     
@@ -30,7 +28,6 @@ open class TokenRemoteApi  {
         
         let hostUrl : String = apiContext.getHost("app")
         let connectUrl = "\(hostUrl)\(tokenUrl)"
-        
         
         networkAPI.post(connectUrl, paramsDict: tokenDetails, headers: [:], completionHandler: completionHandler)
     }
@@ -46,7 +43,6 @@ open class TokenRemoteApi  {
         
         let hostUrl : String = apiContext.getHost("app")
         let connectUrl = "\(hostUrl)\(tokenUrl)"
-        
         
         networkAPI.post(connectUrl, paramsDict: Dictionary(), headers: headers, completionHandler: completionHandler)
     }

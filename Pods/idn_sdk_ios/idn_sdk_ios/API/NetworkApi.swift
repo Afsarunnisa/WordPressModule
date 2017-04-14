@@ -59,13 +59,10 @@ open class NetworkApi {
         
         let params = self.getParams(paramsDict)
         
-//        let tempHost : String = apiContext.getHost("app")
-//        let url = "\(tempHost)\(requestUrl)"
-        
         Alamofire.request(requestUrl, method:.get, parameters:params, headers: headers).responseJSON { response in
             debugPrint(response)
             
-            let statusCode : Int = (response.response?.statusCode)!
+            let statusCode : Int = response.response?.statusCode != nil ? (response.response?.statusCode)! : 0
             
             switch response.result {
             case .success(let value):
@@ -84,14 +81,10 @@ open class NetworkApi {
         let params = self.getParams(paramsDict)
         
         
-//        let tempHost : String = apiContext.getHost("app")
-//        let url = "\(tempHost)\(requestUrl)"
-        
-        
         Alamofire.request(requestUrl, method: .get, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON {
             response in
             
-            let statusCode : Int = (response.response?.statusCode)!
+            let statusCode : Int = response.response?.statusCode != nil ? (response.response?.statusCode)! : 0
             
             switch response.result {
             case .success(let value):
@@ -104,20 +97,15 @@ open class NetworkApi {
     }
     
     
-    
-    
-    
-    func post(_ url: String, paramsDict: Dictionary<String, Any>, headers: [String: String], completionHandler: @escaping (AnyObject?, Int, NSError?) -> ()) {
+    open func post(_ url: String, paramsDict: Dictionary<String, Any>, headers: [String: String], completionHandler: @escaping (AnyObject?, Int, NSError?) -> ()) {
         
         
         let params = self.getParams(paramsDict)
-//        let tempHost : String = apiContext.getHost("app")
-//        let requestUrl = "\(tempHost)\(url)"
         
         Alamofire.request(url, method: .post, parameters: params, headers: headers).responseJSON {
             response in
             
-            let statusCode : Int = (response.response?.statusCode)!
+            let statusCode : Int = response.response?.statusCode != nil ? (response.response?.statusCode)! : 0
             switch response.result {
             case .success(let value):
                 
@@ -125,22 +113,18 @@ open class NetworkApi {
             case .failure(let error):
                 completionHandler(nil, statusCode, error as NSError?)
             }
-            
         }
     }
-    
     
     
     open func postWithEncode(_ url: String, paramsDict: Dictionary<String, Any>, headers: [String: String], completionHandler: @escaping (AnyObject?, Int,NSError?) -> ()) {
         
         let params = self.getParams(paramsDict)
-//        let tempHost : String = apiContext.getHost("app")
-//        let requestUrl = "\(tempHost)\(url)"
         
         Alamofire.request(url, method: .post, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON {
             response in
             
-            let statusCode : Int = (response.response?.statusCode)!
+            let statusCode : Int = response.response?.statusCode != nil ? (response.response?.statusCode)! : 0
             
             switch response.result {
             case .success(let value):
@@ -159,13 +143,10 @@ open class NetworkApi {
         
         let params = self.getParams(paramsDict)
         
-//        let tempHost : String = apiContext.getHost("app")
-//        let requestUrl = "\(tempHost)\(url)"
-        
         Alamofire.request(url, method: .put, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON {
             response in
             
-            let statusCode : Int = (response.response?.statusCode)!
+            let statusCode : Int = response.response?.statusCode != nil ? (response.response?.statusCode)! : 0
             
             switch response.result {
             case .success(let value):
@@ -174,15 +155,31 @@ open class NetworkApi {
             case .failure(let error):
                 completionHandler(nil,statusCode, error as NSError?)
             }
+        }
+    }
+    
+    open func delete(_ url: String, paramsDict: Dictionary<String, Any>, headers: [String: String], completionHandler: @escaping (AnyObject?, Int,NSError?) -> ()){
+        
+        let params = self.getParams(paramsDict)
+        
+        Alamofire.request(url, method: .delete, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON {
+            response in
+            
+            let statusCode : Int = response.response?.statusCode != nil ? (response.response?.statusCode)! : 0
+            
+            switch response.result {
+            case .success(let value):
+                
+                completionHandler(value as AnyObject?, statusCode, nil)
+            case .failure(let error):
+                completionHandler(nil, statusCode, error as NSError?)
+            }
             
         }
     }
     
     
     open func upload(_ url: String,fileName : String, userID: String, mediaFor : String, paramsDict: Dictionary<String, Any>, headers: [String: String], completionHandler: @escaping (AnyObject?, NSError?) -> ()){
-        
-//        let tempHost : String = apiContext.getHost("app")
-//        let requestUrl = "\(tempHost)\(url)"
         
         let URL = try! URLRequest(url: url, method: .post, headers: headers)
         
@@ -254,13 +251,11 @@ open class NetworkApi {
             
             if (val is Dictionary<String, Any>){
                 
-                //                let tempDict : Dictionary = val as! Dictionary
                 value = self.getParams(val as! Dictionary<String, Any>) as AnyObject!
-                
             }else if (val is NSArray){
-                
                 value = self.getParamsFromArray(val as! NSArray) as AnyObject!
-                
+            }else if(val is Int){
+                value = paramsDict[key] as! Int as AnyObject!
             }else{
                 value = paramsDict[key] as! String as AnyObject!
             }
@@ -269,7 +264,6 @@ open class NetworkApi {
             parameters[key] = value as AnyObject
         }
         
-        print("parameters \(parameters)")
         return parameters
     }
     
@@ -278,9 +272,6 @@ open class NetworkApi {
         return swiftArray
     }
 }
-
-
-
 
 
 extension UIImage {

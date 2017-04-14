@@ -23,7 +23,6 @@ open class AbstractApiContext : ApiContext {
         }else{
             self.name = name
         }
-        
     }
     
     @objc open func getName() -> String{
@@ -33,9 +32,7 @@ open class AbstractApiContext : ApiContext {
     
     static var apiContexts: Dictionary<String, ApiContext> = [:]
     
-    
     static func registerApiContext(_ apiContext : ApiContext) {
-
         apiContexts[apiContext.getName!()] = apiContext
     }
     
@@ -55,7 +52,6 @@ open class AbstractApiContext : ApiContext {
     open func AbstractApiContext(){
         
     }
-    
     
     open func AbstractApiContext(_ name : String){
         self.name = name

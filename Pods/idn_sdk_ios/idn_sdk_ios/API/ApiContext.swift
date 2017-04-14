@@ -14,7 +14,6 @@ import Foundation
     
     @objc optional func getName() -> String
     
-    
     @objc optional func setHost(_ moduleName : String, host : String)
     @objc optional func getHost(_ moduleName : String) -> String
     

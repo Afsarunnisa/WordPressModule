@@ -93,8 +93,6 @@ open class MediaApi : NetworkApi {
             mediaFileDetails.mediatype = item["mediatype"].stringValue
             
             mediaDetailsList.append(mediaFileDetails)
-            
-            //            mediaDetailsList.add(mediaFileDetails)
         }
         
         mediaApi.mediaFileDetailsList = mediaDetailsList

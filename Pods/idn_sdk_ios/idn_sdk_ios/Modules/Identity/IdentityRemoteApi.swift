@@ -38,8 +38,6 @@ open class IdentityRemoteApi  {
     var apiContext : IdsIosApiContext!
     
     let clientTokenheaders : [String: String]
-    //    let userTokenheaders : [String: String]
-    
     
     init(httpClient: AnyObject) {
         
@@ -56,7 +54,6 @@ open class IdentityRemoteApi  {
         
         
         networkAPI = NetworkApi()
-        
         
         loginUrl = "\(baseIdentityUrl)/auth/login"
         signupUrl = "\(baseIdentityUrl)/users/signup"
@@ -102,10 +99,7 @@ open class IdentityRemoteApi  {
     func socialWebLogin(socialType : String, completionHandler: @escaping (AnyObject?, Int, NSError?) -> ()){
         
         let hostUrl : String = apiContext.getHost("app")
-        
         let connectUrl = "\(hostUrl)\(socailConnectUrl)/\(socialType)/login"
-        
-        
         
         networkAPI.get(connectUrl, paramsDict: Dictionary(), headers: clientTokenheaders, completionHandler: completionHandler)
         
@@ -143,7 +137,6 @@ open class IdentityRemoteApi  {
         
         
         let hostUrl : String = apiContext.getHost("app")
-        
         let url : String = "\(hostUrl)\(profileUrl)/\(userID)"
         
         let userTokenModel : TokenApiModel = apiContext.getUserToken("identity") as! TokenApiModel
@@ -161,7 +154,6 @@ open class IdentityRemoteApi  {
         
         
         let hostUrl : String = apiContext.getHost("app")
-        
         let url : String = "\(hostUrl)\(profileUrl)/\(userID)"
         
         let userTokenModel : TokenApiModel = apiContext.getUserToken("identity") as! TokenApiModel

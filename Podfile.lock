@@ -1,7 +1,7 @@
 PODS:
   - Alamofire (4.4.0)
   - GRMustache.swift (2.0.0)
-  - idn_sdk_ios (0.7.6):
+  - idn_sdk_ios (0.8.3):
     - Alamofire (~> 4.4)
     - MBProgressHUD
     - SwiftyJSON
@@ -15,18 +15,18 @@ PODS:
 
 DEPENDENCIES:
   - GRMustache.swift
-  - idn_sdk_ios (~> 0.7.6)
+  - idn_sdk_ios (~> 0.8.3)
   - RealmSwift
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   GRMustache.swift: 8a547c12bea16052071b2b540af83d770075f0eb
-  idn_sdk_ios: b3f237b99f480c60c48c51bc8ef13c706cb7c9b4
+  idn_sdk_ios: 75c5cbe19fb6c234b5672fad25a5652e9cbcd54f
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   Realm: 5a280a1f5a9a3c267bebf4f41ee47911137703d7
   RealmSwift: 0c02b9f2d4be4301c497ed10e53a0580584eb1dd
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 7199e1ad1ce437275d99b216c75d690c40cbd89a
+PODFILE CHECKSUM: 65ac7936ade4a209727de1de68fd267af6c3ed53
 
 COCOAPODS: 1.1.1

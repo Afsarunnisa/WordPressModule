@@ -8,7 +8,7 @@ s.summary = "WordPressModule "
 s.requires_arc = true
 
 # 2
-s.version = "0.1.9"
+s.version = "0.2.0"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
@@ -35,8 +35,7 @@ s.source = { :git => "https://github.com/Afsarunnisa/WordPressModule.git", :tag 
 s.framework = "UIKit"
 s.dependency 'RealmSwift'
 s.dependency 'GRMustache.swift'
-s.dependency 'idn_sdk_ios', '~> 0.7.6'
-# s.dependency 'BTNavigationDropdownMenu', :git => 'https://github.com/PhamBaTho/BTNavigationDropdownMenu.git', :branch => 'swift-3.0'
+s.dependency 'idn_sdk_ios', '~> 0.8.3'
 
 
 

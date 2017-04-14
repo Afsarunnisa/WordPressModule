@@ -33,7 +33,6 @@ open class MediaRemoteApi  {
             "Authorization": "Bearer \(userToken)"
         ]
     
-        
         mediaUrl = "\(baseMediaUrl)/media"
     }
     
@@ -41,10 +40,7 @@ open class MediaRemoteApi  {
     
     func getMedia(_ userID : String, completionHandler: @escaping (AnyObject?, Int, NSError?) -> ()){
         
-        
         let hostUrl : String = apiContext.getHost("app")
-        
-
         let url = "\(hostUrl)\(mediaUrl)?id=\(userID)&mediafor=profile"
         networkAPI.get(url, paramsDict: Dictionary(), headers: userTokenheaders, completionHandler: completionHandler)
     }
@@ -55,7 +51,6 @@ open class MediaRemoteApi  {
         let hostUrl : String = apiContext.getHost("app")
         let connectUrl = "\(hostUrl)\(mediaUrl)"
         
-
         networkAPI.upload(connectUrl, fileName: imgName, userID: userID, mediaFor: mediaFor, paramsDict: Dictionary(), headers: userTokenheaders, completionHandler: completionHandler)
         
     }

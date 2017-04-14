@@ -12,7 +12,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 
     pod 'RealmSwift'
     pod 'GRMustache.swift'
-    pod 'idn_sdk_ios', '~> 0.7.6'
+    pod 'idn_sdk_ios', '~> 0.8.3'
 
 
 

@@ -11,7 +11,6 @@ import Foundation
 
 open class TokenIdsRegistry {
     public init(){
-        
         IDS.register("token", clazz: TokenApi.self)
     }
 }

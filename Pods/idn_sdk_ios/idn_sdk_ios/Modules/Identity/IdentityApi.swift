@@ -297,19 +297,15 @@ open class IdentityApi : NetworkApi {
             }else {
                 messageApiModel = MessagesApiModel(json: swiftyJsonVar)
             }
-            
             responseHandler(modulesArray, messageApiModel, error)
-            
         })
         
     }
-    
     
     func getMessageFromDict(msgDict : JSON) -> MessagesApiModel{
         
         let messageApiModel : MessagesApiModel = MessagesApiModel()
         let errorsAry: Array<JSON> = msgDict["errors"].arrayValue
-        
         messageApiModel.message = errorsAry[0]["message"].string!
         messageApiModel.messageCode = errorsAry[0]["messageCode"].string!
         
